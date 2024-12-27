@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrectly accessing an element before it's added to the DOM
+    document.getElementById("myDiv").innerHTML = "Hello, world!"; //Bug: This line causes an error
+  </script>
+</body>
+</html>
